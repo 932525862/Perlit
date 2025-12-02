@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { CheckCircle } from 'lucide-react';
-
+import about from '@/assets/about (1).png';
 export const About = () => {
   const { t } = useTranslation();
 
   const stats = [
     { value: '15+', label: t('about.experience') },
     { value: '500+', label: t('about.clients') },
-    { value: '25+', label: t('about.countries') },
+    { value: '15+', label: t('about.countries') },
   ];
 
   return (
@@ -19,7 +19,7 @@ export const About = () => {
             {/* Main Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-xl">
               <img 
-                src="https://tashkent.perlite.group/wp-content/uploads/2023/04/benefit-banner-2.jpg"
+                src={about}
                 alt="Perlite Production"
                 className="w-full h-[400px] lg:h-[500px] object-cover"
               />

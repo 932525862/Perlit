@@ -12,9 +12,9 @@ import {
 } from '@/components/ui/dropdown-menu';
 
 const languages = [
-  { code: 'uz', name: "O'zbek", flag: '🇺🇿' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'uz', name: "O'zbek", },
+  { code: 'ru', name: 'Русский',  },
+  { code: 'en', name: 'English',  },
 ];
 
 export const Header = () => {
@@ -100,7 +100,7 @@ export const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="gap-2">
                   <Globe className="h-4 w-4" />
-                  <span className="hidden sm:inline">{currentLang.flag} {currentLang.name}</span>
+                  <span className="hidden sm:inline"> {currentLang.name}</span>
                   <ChevronDown className="h-3 w-3" />
                 </Button>
               </DropdownMenuTrigger>
@@ -111,7 +111,7 @@ export const Header = () => {
                     onClick={() => i18n.changeLanguage(lang.code)}
                     className={i18n.language === lang.code ? 'bg-accent' : ''}
                   >
-                    <span className="mr-2">{lang.flag}</span>
+                    {/* <span className="mr-2">{lang.flag}</span> */}
                     {lang.name}
                   </DropdownMenuItem>
                 ))}

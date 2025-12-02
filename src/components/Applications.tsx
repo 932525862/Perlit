@@ -39,7 +39,7 @@ const applications = [
     key: "filtration",
     icon: Droplets,
     color: "bg-blue-100 text-blue-700",
-    image: "/src/assets/perlit5.webp",
+    image: "/src/assets/zavod.jpg",
   },
   {
     key: "metallurgy",

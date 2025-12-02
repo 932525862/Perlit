@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Contact } from '@/components/Contact';
+import Zavod from "@/assets/zavod.jpg"
+
 
 const productionSteps = [
   { key: 'mining', number: '01' },
@@ -108,7 +110,7 @@ const Production = () => {
               
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-card rounded-2xl p-6 text-center shadow-sm border border-border/50">
-                  <div className="text-4xl font-display font-bold text-secondary mb-2">5</div>
+                  <div className="text-4xl font-display font-bold text-secondary mb-2">1</div>
                   <p className="text-sm text-muted-foreground">{t('production.stats.factories')}</p>
                 </div>
                 <div className="bg-card rounded-2xl p-6 text-center shadow-sm border border-border/50">

@@ -151,7 +151,7 @@ export const WhyUs = () => {
           <div className="grid sm:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-4xl lg:text-5xl font-display font-bold text-primary-foreground mb-2">
-                4750+
+                10+
               </div>
               <p className="text-primary-foreground/80 text-sm">
                 {t('whyUs.items.delivery.description').split(' ').slice(-3).join(' ')}
@@ -159,7 +159,7 @@ export const WhyUs = () => {
             </div>
             <div>
               <div className="text-4xl lg:text-5xl font-display font-bold text-primary-foreground mb-2">
-                5
+                1
               </div>
               <p className="text-primary-foreground/80 text-sm">
                 {t('whyUs.items.factories.description')}
