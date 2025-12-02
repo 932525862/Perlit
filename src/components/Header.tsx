@@ -64,7 +64,7 @@ export const Header = () => {
             />
             <div className="hidden sm:block">
               <span className="text-xl font-display font-bold text-foreground">Perlite</span>
-              <span className="text-xl font-display font-bold text-secondary">.group</span>
+              <span className="text-xl font-display font-bold text-secondary">.uz</span>
             </div>
           </Link>
 

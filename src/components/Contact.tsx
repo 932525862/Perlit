@@ -36,14 +36,14 @@ export const Contact = () => {
     {
       icon: Phone,
       label: t('contact.phone'),
-      value: '+99 890 99-51-003',
-      href: 'tel:+998909951003',
+      value: '+998 (94) 617-16-46',
+      href: 'tel:+998946171646',
     },
     {
       icon: Mail,
       label: t('contact.email'),
-      value: 'sale@perlite.group',
-      href: 'mailto:sale@perlite.group',
+      value: 'bobur.uz@mail.ru',
+      href: 'mailto:bobur.uz@mail.ru',
     },
     {
       icon: MapPin,

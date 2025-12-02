@@ -33,7 +33,7 @@ export const Footer = () => {
               />
               <div>
                 <span className="text-xl font-display font-bold">Perlite</span>
-                <span className="text-xl font-display font-bold text-secondary">.group</span>
+                <span className="text-xl font-display font-bold text-secondary">.uz</span>
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
@@ -78,8 +78,8 @@ export const Footer = () => {
               {t('contact.title')}
             </h4>
             <ul className="space-y-2">
-              <li className="text-primary-foreground/70 text-sm">+99 890 99-51-003</li>
-              <li className="text-primary-foreground/70 text-sm">sale@perlite.group</li>
+              <li className="text-primary-foreground/70 text-sm">+998 (94) 617-16-46</li>
+              <li className="text-primary-foreground/70 text-sm">bobur.uz@mail.ru</li>
               <li className="text-primary-foreground/70 text-sm">{t('contact.addressValue')}</li>
             </ul>
           </div>

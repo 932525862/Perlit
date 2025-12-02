@@ -8,13 +8,13 @@ const uz = {
     production: "Ishlab chiqarish",
     about: "Kompaniya haqida",
     contacts: "Kontaktlar",
-    getQuote: "Narx olish"
+    getQuote: "Bog‘lanish"
   },
   hero: {
     title: "Perlit — issiqlik izolyatsiyasi uchun eng yaxshi yechim",
     subtitle: "O'zbekiston bo'ylab va butun dunyo mamlakatlariga eksport qilamiz",
     description: "Qurilish, qishloq xo'jaligi, metallurgiya va sanoat uchun yuqori sifatli perlit ishlab chiqaramiz. -200°C dan +900°C gacha harorat diapazonida ishlatish mumkin.",
-    cta: "Narx so'rash",
+    cta: "Bog‘lanish",
     learnMore: "Batafsil"
   },
   perliteTypes: {
@@ -174,7 +174,7 @@ const uz = {
   productDetail: {
     backToProducts: "Mahsulotlarga qaytish",
     grades: "Markalar",
-    getQuote: "Narx so'rash",
+    getQuote: "Bog‘lanish",
     specifications: "Texnik xususiyatlar",
     fraction: "Fraksiya",
     density: "Zichlik",
@@ -259,13 +259,13 @@ const ru = {
     production: "Производство",
     about: "О компании",
     contacts: "Контакты",
-    getQuote: "Получить КП"
+    getQuote: "Контакты"
   },
   hero: {
     title: "Перлит — лучшее решение для теплоизоляции",
     subtitle: "По Узбекистану и экспорт во все страны мира",
     description: "Производим высококачественный перлит для строительства, сельского хозяйства, металлургии и промышленности. Диапазон применения от -200°C до +900°C.",
-    cta: "Узнать цену",
+    cta: "Контакты",
     learnMore: "Подробнее"
   },
   perliteTypes: {
@@ -425,7 +425,7 @@ const ru = {
   productDetail: {
     backToProducts: "Вернуться к продукции",
     grades: "Марки",
-    getQuote: "Узнать цену",
+    getQuote: "Контакты",
     specifications: "Технические характеристики",
     fraction: "Фракция",
     density: "Плотность",
@@ -510,13 +510,13 @@ const en = {
     production: "Production",
     about: "About Us",
     contacts: "Contacts",
-    getQuote: "Get Quote"
+    getQuote: "Contacts Us"
   },
   hero: {
     title: "Perlite — the best solution for thermal insulation",
     subtitle: "Throughout Uzbekistan and export worldwide",
     description: "We produce high-quality perlite for construction, agriculture, metallurgy and industry. Application range from -200°C to +900°C.",
-    cta: "Get Price",
+    cta: "Contact Us",
     learnMore: "Learn More"
   },
   perliteTypes: {
@@ -676,7 +676,7 @@ const en = {
   productDetail: {
     backToProducts: "Back to Products",
     grades: "Grades",
-    getQuote: "Get Price",
+    getQuote: "Contact Us",
     specifications: "Technical Specifications",
     fraction: "Fraction",
     density: "Density",

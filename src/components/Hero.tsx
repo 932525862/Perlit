@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/perlitee.png';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -33,7 +33,7 @@ export const Hero = () => {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full text-sm font-medium text-accent-foreground mb-6 opacity-0 animate-fade-in">
               <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
-              Perlite Group — GOST & ISO
+              Perlite.uz — GOST & ISO
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight mb-6 opacity-0 animate-fade-in animation-delay-200">
