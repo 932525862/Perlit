@@ -1,55 +1,63 @@
-import { useTranslation } from 'react-i18next';
-import { 
-  Building2, 
-  Flame, 
-  Droplets, 
+import { useTranslation } from "react-i18next";
+import {
+  Building2,
+  Flame,
+  Droplets,
   Thermometer,
   Factory,
   Wheat,
   FlaskConical,
-  Snowflake
-} from 'lucide-react';
+  Snowflake,
+} from "lucide-react";
 
 const applications = [
   {
-    key: 'construction',
+    key: "construction",
     icon: Building2,
-    color: 'bg-slate/20 text-slate-dark',
+    color: "bg-slate/20 text-slate-dark",
+    image: "/src/assets/perlit1.jpg",
   },
   {
-    key: 'insulation',
+    key: "insulation",
     icon: Thermometer,
-    color: 'bg-secondary/20 text-warm-dark',
+    color: "bg-secondary/20 text-warm-dark",
+    image: "/src/assets/perlit2.jpg",
   },
   {
-    key: 'fireproof',
+    key: "fireproof",
     icon: Flame,
-    color: 'bg-destructive/20 text-destructive',
+    color: "bg-destructive/20 text-destructive",
+    image: "/src/assets/perlit3.png",
   },
   {
-    key: 'agriculture',
+    key: "agriculture",
     icon: Wheat,
-    color: 'bg-green-100 text-green-700',
+    color: "bg-green-100 text-green-700",
+    image: "/src/assets/perlit4.jpg",
   },
   {
-    key: 'filtration',
+    key: "filtration",
     icon: Droplets,
-    color: 'bg-blue-100 text-blue-700',
+    color: "bg-blue-100 text-blue-700",
+    image: "/src/assets/perlit5.webp",
   },
   {
-    key: 'metallurgy',
+    key: "metallurgy",
     icon: Factory,
-    color: 'bg-orange-100 text-orange-700',
+    color: "bg-orange-100 text-orange-700",
+    image: "/src/assets/perlit6.jpg",
   },
   {
-    key: 'cryogenic',
+    key: "cryogenic",
     icon: Snowflake,
-    color: 'bg-cyan-100 text-cyan-700',
+    color: "bg-cyan-100 text-cyan-700",
+    image: "/src/assets/perlit7.png",
   },
   {
-    key: 'chemical',
+    key: "chemical",
     icon: FlaskConical,
-    color: 'bg-purple-100 text-purple-700',
+    color: "bg-purple-100 text-purple-700",
+    image: "/src/assets/perlit8.png",
   },
 ];
 
@@ -60,18 +68,18 @@ export const Applications = () => {
     <section className="py-24 bg-background relative overflow-hidden">
       <div className="absolute top-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-slate/5 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-accent rounded-full text-sm font-medium text-accent-foreground mb-4">
-            {t('applications.badge')}
+            {t("applications.badge")}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            {t('applications.title')}
+            {t("applications.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            {t('applications.subtitle')}
+            {t("applications.subtitle")}
           </p>
         </div>
 
@@ -80,23 +88,31 @@ export const Applications = () => {
           {applications.map((app, index) => {
             const Icon = app.icon;
             return (
-              <div 
+              <div
                 key={app.key}
-                className="group bg-card rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-500 border border-border/50 hover:border-secondary/30"
+                className="group bg-card rounded-2xl shadow-sm hover:shadow-lg transition-all duration-500 border border-border/50 hover:border-secondary/30 overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className={`w-14 h-14 rounded-xl ${app.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="h-7 w-7" />
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={app.image}
+                    alt={t(`perliteTypes.types.name`)}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
                 </div>
-                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                  {t(`applications.items.${app.key}.title`)}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t(`applications.items.${app.key}.description`)}
-                </p>
+                <div className="p-5">
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                    {t(`applications.items.${app.key}.title`)}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t(`applications.items.${app.key}.description`)}
+                  </p>
+                </div>
               </div>
             );
           })}
+         
         </div>
 
         {/* Construction Details */}
@@ -104,37 +120,57 @@ export const Applications = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl lg:text-3xl font-display font-bold mb-6">
-                {t('applications.construction.title')}
+                {t("applications.construction.title")}
               </h3>
               <ul className="space-y-4">
-                {['plaster', 'concrete', 'blocks', 'roofing', 'floors'].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <span className="text-secondary-foreground text-xs">✓</span>
-                    </span>
-                    <span className="text-primary-foreground/90">
-                      {t(`applications.construction.items.${item}`)}
-                    </span>
-                  </li>
-                ))}
+                {["plaster", "concrete", "blocks", "roofing", "floors"].map(
+                  (item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-secondary-foreground text-xs">
+                          ✓
+                        </span>
+                      </span>
+                      <span className="text-primary-foreground/90">
+                        {t(`applications.construction.items.${item}`)}
+                      </span>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-primary-foreground/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-display font-bold text-secondary mb-2">-200°C</div>
-                <p className="text-sm text-primary-foreground/70">{t('applications.tempMin')}</p>
+                <div className="text-3xl font-display font-bold text-secondary mb-2">
+                  -200°C
+                </div>
+                <p className="text-sm text-primary-foreground/70">
+                  {t("applications.tempMin")}
+                </p>
               </div>
               <div className="bg-primary-foreground/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-display font-bold text-secondary mb-2">+900°C</div>
-                <p className="text-sm text-primary-foreground/70">{t('applications.tempMax')}</p>
+                <div className="text-3xl font-display font-bold text-secondary mb-2">
+                  +900°C
+                </div>
+                <p className="text-sm text-primary-foreground/70">
+                  {t("applications.tempMax")}
+                </p>
               </div>
               <div className="bg-primary-foreground/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-display font-bold text-secondary mb-2">50-150</div>
-                <p className="text-sm text-primary-foreground/70">kg/m³ {t('applications.density')}</p>
+                <div className="text-3xl font-display font-bold text-secondary mb-2">
+                  50-150
+                </div>
+                <p className="text-sm text-primary-foreground/70">
+                  kg/m³ {t("applications.density")}
+                </p>
               </div>
               <div className="bg-primary-foreground/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-display font-bold text-secondary mb-2">A1</div>
-                <p className="text-sm text-primary-foreground/70">{t('applications.fireClass')}</p>
+                <div className="text-3xl font-display font-bold text-secondary mb-2">
+                  A1
+                </div>
+                <p className="text-sm text-primary-foreground/70">
+                  {t("applications.fireClass")}
+                </p>
               </div>
             </div>
           </div>
