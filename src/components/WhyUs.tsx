@@ -21,19 +21,53 @@ const icons = {
   certification: Award,
 };
 
-const itemKeys = [
-  'factories',
-  'fullCycle',
-  'flexibility',
-  'dealers',
-  'testing',
-  'delivery',
-  'loyalty',
-  'certification',
-] as const;
+// const itemKeys = [
+//   ,
+//   'fullCycle',
+//   'flexibility',
+//   'dealers',
+//   'testing',
+//   'delivery',
+//   'loyalty',
+//   'certification',
+// ] as const;
 
 export const WhyUs = () => {
   const { t } = useTranslation();
+  const whyUsData = [
+    {
+      image: '/src/assets/whyUs/whyus1.jpg',
+      key: 'factories',
+    },
+    {
+      image: '/src/assets/whyUs/whyus2.jpg',
+      key: 'fullCycle',
+    },
+    {
+      image: '/src/assets/whyUs/whyus3.png',
+      key: 'flexibility',
+    },
+    {
+      image: '/src/assets/whyUs/whyus4.jpg',
+      key: 'dealers',
+    },
+    {
+      image: '/src/assets/whyUs/whyus5.png',
+      key: 'testing',
+    },
+    {
+      image: '/src/assets/whyUs/whyus6.jpg',
+      key: 'delivery',
+    },
+    {
+      image: '/src/assets/whyUs/whyus7.jpg',
+      key: 'loyalty',
+    },
+    {
+      image: '/src/assets/sertificate.png',
+      key: 'certification',
+    },
+  ]
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
@@ -54,35 +88,63 @@ export const WhyUs = () => {
 
         {/* Features Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {itemKeys.map((key, index) => {
-            const Icon = icons[key];
+          {whyUsData.map((data, index) => {
             return (
-              <div 
-                key={key}
-                className="group relative bg-card rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-500 border border-border/50 hover:border-secondary/30"
+              <div
+                key={data.key}
+                className="group bg-card rounded-2xl shadow-sm hover:shadow-lg transition-all duration-500 border border-border/50 hover:border-secondary/30 overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {/* Icon */}
-                <div className="mb-4 relative">
-                  <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center group-hover:bg-secondary/20 transition-colors duration-300">
-                    <Icon className="h-7 w-7 text-foreground group-hover:text-secondary transition-colors duration-300" />
-                  </div>
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={data.image}
+                    alt={t(`perliteTypes.types.name`)}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
                 </div>
-
-                {/* Content */}
-                <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                  {t(`whyUs.items.${key}.title`)}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t(`whyUs.items.${key}.description`)}
-                </p>
-
-                {/* Hover Accent */}
-                <div className="absolute bottom-0 left-6 right-6 h-1 bg-secondary/0 group-hover:bg-secondary rounded-full transition-all duration-300" />
+                <div className="p-5">
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                    {t(`whyUs.items.${data.key}.title`)}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t(`whyUs.items.${data.key}.description`)}
+                  </p>
+                </div>
               </div>
             );
           })}
         </div>
+        {/* <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {applications.map((app, index) => {
+            const Icon = app.icon;
+            return (
+              <div
+                key={app.key}
+                className="group bg-card rounded-2xl shadow-sm hover:shadow-lg transition-all duration-500 border border-border/50 hover:border-secondary/30 overflow-hidden"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={app.image}
+                    alt={t(`perliteTypes.types.name`)}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-display font-semibold text-foreground mb-2">
+                    {t(`applications.items.${app.key}.title`)}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t(`applications.items.${app.key}.description`)}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+         
+        </div> */}
 
         {/* Stats Banner */}
         <div className="mt-20 bg-gradient-to-r from-primary via-slate to-primary rounded-3xl p-8 lg:p-12">
