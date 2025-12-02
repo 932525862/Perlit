@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Logo-inspired color palette */
+    /* Slate gray from the cold side of the logo */
+    --slate: 215 25% 45%;
+    --slate-dark: 215 30% 30%;
+    --slate-light: 215 20% 65%;
+    
+    /* Warm beige/tan from the warm side of the logo */
+    --warm: 38 45% 65%;
+    --warm-dark: 38 50% 45%;
+    --warm-light: 38 40% 85%;
+    
+    /* Silver accent from the ring */
+    --silver: 210 15% 80%;
+    --silver-dark: 210 10% 60%;
+    
+    /* Base colors */
+    --background: 40 20% 98%;
+    --foreground: 215 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 30% 15%;
+
+    /* Primary - Slate blue-gray */
+    --primary: 215 30% 30%;
+    --primary-foreground: 40 20% 98%;
+
+    /* Secondary - Warm beige */
+    --secondary: 38 45% 65%;
+    --secondary-foreground: 215 30% 15%;
+
+    --muted: 210 15% 92%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Accent - Silver */
+    --accent: 38 40% 90%;
+    --accent-foreground: 215 30% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 38 45% 65%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 30% 30%) 0%, hsl(215 25% 45%) 50%, hsl(38 45% 65%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(38 50% 45%) 0%, hsl(38 45% 65%) 100%);
+    --gradient-slate: linear-gradient(135deg, hsl(215 30% 30%) 0%, hsl(215 25% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(40 20% 97%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(215 30% 30% / 0.1);
+    --shadow-md: 0 8px 24px -8px hsl(215 30% 30% / 0.15);
+    --shadow-lg: 0 16px 48px -16px hsl(215 30% 30% / 0.2);
+    --shadow-warm: 0 8px 32px -8px hsl(38 45% 65% / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 30% 10%;
+    --foreground: 40 20% 95%;
+
+    --card: 215 25% 15%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 215 25% 15%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 38 45% 65%;
+    --primary-foreground: 215 30% 10%;
+
+    --secondary: 215 25% 25%;
+    --secondary-foreground: 40 20% 95%;
+
+    --muted: 215 20% 20%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 215 25% 20%;
+    --accent-foreground: 38 45% 70%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 25%;
+    --input: 215 20% 25%;
+    --ring: 38 45% 65%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .gradient-slate {
+    background: var(--gradient-slate);
+  }
+  
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
