@@ -207,8 +207,9 @@ const uz = {
         description: "Mahsulot namunalarini bepul beramiz"
       },
       delivery: {
-        title: "Kuniga 18 yuk mashinasi",
-        description: "2024 yilda 4750 dan ortiq yuk mashinasi jo'natildi"
+       title: "Yuk mashinalari",
+description: "Agar mahsulotlarni olib ketish uchun yuk mashinangiz bo‘lmasa, biz o‘zimiz ta’minlab beramiz."
+
       },
       loyalty: {
         title: "Sodiqlik",
@@ -458,8 +459,9 @@ const ru = {
         description: "Бесплатно даём образцы продукции на пробу"
       },
       delivery: {
-        title: "18 фур в день",
-        description: "Более 4750 фур было отгружено в 2024 году"
+        title: "Грузовые автомобили",
+description: "Если у вас нет грузовика для вывоза продукции, мы предоставим его сами."
+
       },
       loyalty: {
         title: "Лояльность",
@@ -709,8 +711,9 @@ const en = {
         description: "Free product samples for trial"
       },
       delivery: {
-        title: "18 Trucks Daily",
-        description: "More than 4750 trucks shipped in 2024"
+       title: "Trucks",
+description: "If you don't have a truck to transport the products, we will provide one ourselves."
+        
       },
       loyalty: {
         title: "Loyalty",

@@ -44,18 +44,18 @@ const icons = {
 export const WhyUs = () => {
   const { t } = useTranslation();
   const whyUsData = [
-    {
-      image:whyus1,
-      key: 'factories',
-    },
-    {
-      image: whyus2,
-      key: 'fullCycle',
-    },
-    {
-      image:whyus3,
-      key: 'flexibility',
-    },
+    // {
+    //   image:whyus1,
+    //   key: 'factories',
+    // },
+    // {
+    //   image: whyus2,
+    //   key: 'fullCycle',
+    // },
+    // {
+    //   image:whyus3,
+    //   key: 'flexibility',
+    // },
     {
       image: whyus4,
       key: 'dealers',
@@ -72,10 +72,7 @@ export const WhyUs = () => {
       image: whyus7,
       key: 'loyalty',
     },
-    {
-      image:sertificate,
-      key: 'certification',
-    },
+  
   ]
 
   return (

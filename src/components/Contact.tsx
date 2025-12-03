@@ -40,6 +40,12 @@ export const Contact = () => {
       href: 'tel:+998946171646',
     },
     {
+      icon: Phone,
+      label: t('contact.phone'),
+      value: '+998 (97) 561-16-46',
+      href: 'tel:+998975611646',
+    },
+    {
       icon: Mail,
       label: t('contact.email'),
       value: 'bobur.uz@mail.ru',

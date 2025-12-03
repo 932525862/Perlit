@@ -5,12 +5,12 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Contact } from '@/components/Contact';
 
-import Zavod from "@/assets/zavod.jpg";
+import Zavod from "@/assets/zavoddd.jpg";
 import Zavod2 from "@/assets/zavod2.jpg";
 import Zavod3 from "@/assets/zavod3.jpg";
 import Zavod4 from "@/assets/zavod4.jpg";
 import Zavod5 from "@/assets/zavod5.jpg";
-import Zavod6 from "@/assets/zavod6.png";
+import Zavod6 from "@/assets/about (2).png";
 
 const productionSteps = [
   { key: 'mining', number: '01' },

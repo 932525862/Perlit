@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { CheckCircle } from 'lucide-react';
-import about from '@/assets/about (1).png';
+import about from '@/assets/about (2).png';
 export const About = () => {
   const { t } = useTranslation();
 

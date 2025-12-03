@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Instagram, Send } from 'lucide-react'; // 🔥 ikonlar qo‘shildi
 import logo from '@/assets/logo.png';
 
 export const Footer = () => {
@@ -23,12 +24,13 @@ export const Footer = () => {
     <footer className="bg-primary text-primary-foreground py-16">
       <div className="container mx-auto px-4">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img 
-                src={logo} 
-                alt="Perlite Group" 
+              <img
+                src={logo}
+                alt="Perlite Group"
                 className="h-12 w-12 object-contain bg-primary-foreground rounded-full p-1"
               />
               <div>
@@ -36,9 +38,29 @@ export const Footer = () => {
                 <span className="text-xl font-display font-bold text-secondary">.uz</span>
               </div>
             </div>
+
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               {t('footer.description')}
             </p>
+
+            {/* 🔥 Instagram & Telegram Icons */}
+            <div className="flex items-center gap-4 mt-4">
+              <a
+                href="https://www.instagram.com/perlite.uz?igsh=eTRpdHVraW80ZXI5"
+                target="_blank"
+                className="text-secondary hover:opacity-80 transition"
+              >
+                <Instagram className="w-8 h-8" />
+              </a>
+
+              <a
+                href="https://t.me/Bob1987"
+                target="_blank"
+                className="text-secondary hover:opacity-80 transition"
+              >
+                <Send className="w-8 h-8" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -46,6 +68,7 @@ export const Footer = () => {
             <h4 className="font-display font-semibold mb-4">
               {t('nav.home')}
             </h4>
+
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.key}>
@@ -65,6 +88,7 @@ export const Footer = () => {
             <h4 className="font-display font-semibold mb-4">
               {t('products.title')}
             </h4>
+
             <ul className="space-y-2">
               <li className="text-primary-foreground/70 text-sm">{t('products.perlite.name')}</li>
               <li className="text-primary-foreground/70 text-sm">{t('products.vermiculite.name')}</li>
@@ -74,13 +98,14 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display font-semibold mb-4">
-              {t('contact.title')}
-            </h4>
+            <h4 className="font-display font-semibold mb-4">{t('contact.title')}</h4>
             <ul className="space-y-2">
-              <li className="text-primary-foreground/70 text-sm">+998 (94) 617-16-46</li>
+              <li className="text-primary-foreground/70 text-sm"> <a href="tel:+998946171646">+998 (94) 617-16-46</a> </li>
+               <li className="text-primary-foreground/70 text-sm"> <a href="tel:+998975611646"> +998 (97) 561-16-46</a> </li>
               <li className="text-primary-foreground/70 text-sm">bobur.uz@mail.ru</li>
-              <li className="text-primary-foreground/70 text-sm">{t('contact.addressValue')}</li>
+              <li className="text-primary-foreground/70 text-sm">
+                {t('contact.addressValue')}
+              </li>
             </ul>
           </div>
         </div>
@@ -90,6 +115,7 @@ export const Footer = () => {
           <p className="text-primary-foreground/60 text-sm">
             © {currentYear} {t('footer.company')}. {t('footer.rights')}.
           </p>
+
           <div className="flex items-center gap-4">
             <span className="text-primary-foreground/60 text-sm">Tashkent</span>
             <span className="w-1 h-1 rounded-full bg-secondary" />
