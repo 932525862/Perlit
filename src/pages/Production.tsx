@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Contact } from '@/components/Contact';
-import Zavod from "@/assets/zavod.jpg"
 
+import Zavod from "@/assets/zavod.jpg";
+import Zavod2 from "@/assets/zavod2.jpg";
+import Zavod3 from "@/assets/zavod3.jpg";
+import Zavod4 from "@/assets/zavod4.jpg";
+import Zavod5 from "@/assets/zavod5.jpg";
+import Zavod6 from "@/assets/zavod6.png";
 
 const productionSteps = [
   { key: 'mining', number: '01' },
@@ -16,6 +21,8 @@ const productionSteps = [
   { key: 'packaging', number: '06' },
 ];
 
+const factoryImages = [Zavod, Zavod2, Zavod3, Zavod4, Zavod5, Zavod6];
+
 const Production = () => {
   const { t } = useTranslation();
 
@@ -23,6 +30,7 @@ const Production = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-24">
+
         {/* Hero */}
         <section className="py-16 bg-gradient-to-br from-slate-dark via-slate to-slate-light text-primary-foreground relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
@@ -61,7 +69,7 @@ const Production = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {productionSteps.map((step, index) => (
+              {productionSteps.map((step) => (
                 <div 
                   key={step.key}
                   className="relative bg-card rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-lg hover:border-secondary/30 transition-all duration-300"
@@ -107,7 +115,7 @@ const Production = () => {
                   ))}
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-card rounded-2xl p-6 text-center shadow-sm border border-border/50">
                   <div className="text-4xl font-display font-bold text-secondary mb-2">1</div>
@@ -130,19 +138,24 @@ const Production = () => {
           </div>
         </section>
 
-        {/* Factory Images Placeholder */}
+        {/* Factory Images - UPDATED */}
         <section className="py-24">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-display font-bold text-foreground mb-8 text-center">
               {t('production.galleryTitle')}
             </h2>
+
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
+              {factoryImages.map((img, index) => (
                 <div 
-                  key={i}
-                  className="aspect-video bg-muted rounded-2xl flex items-center justify-center border-2 border-dashed border-border"
+                  key={index}
+                  className="aspect-video rounded-2xl overflow-hidden border border-border"
                 >
-                  <p className="text-muted-foreground text-sm">{t('production.imageComingSoon')}</p>
+                  <img 
+                    src={img} 
+                    alt={`Factory ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               ))}
             </div>
