@@ -9,6 +9,15 @@ import {
   Heart, 
   Award 
 } from 'lucide-react';
+import whyus1 from '@/assets/whyUs/whyus1.jpg';
+import whyus2 from '@/assets/whyUs/whyus2.jpg';
+import whyus3 from '@/assets/whyUs/whyus3.png';
+import whyus4 from '@/assets/whyUs/whyus4.jpg';
+import whyus5 from '@/assets/whyUs/whyus5.png';
+import whyus6 from '@/assets/whyUs/whyus6.jpg';
+import whyus7 from '@/assets/whyUs/whyus7.jpg';
+import sertificate from '@/assets/sertificate.png';
+
 
 const icons = {
   factories: Factory,
@@ -36,35 +45,35 @@ export const WhyUs = () => {
   const { t } = useTranslation();
   const whyUsData = [
     {
-      image: '/src/assets/whyUs/whyus1.jpg',
+      image:whyus1,
       key: 'factories',
     },
     {
-      image: '/src/assets/whyUs/whyus2.jpg',
+      image: whyus2,
       key: 'fullCycle',
     },
     {
-      image: '/src/assets/whyUs/whyus3.png',
+      image:whyus3,
       key: 'flexibility',
     },
     {
-      image: '/src/assets/whyUs/whyus4.jpg',
+      image: whyus4,
       key: 'dealers',
     },
     {
-      image: '/src/assets/whyUs/whyus5.png',
+      image: whyus5,
       key: 'testing',
     },
     {
-      image: '/src/assets/whyUs/whyus6.jpg',
+      image: whyus6,
       key: 'delivery',
     },
     {
-      image: '/src/assets/whyUs/whyus7.jpg',
+      image: whyus7,
       key: 'loyalty',
     },
     {
-      image: '/src/assets/sertificate.png',
+      image:sertificate,
       key: 'certification',
     },
   ]
