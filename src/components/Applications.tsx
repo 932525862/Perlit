@@ -9,55 +9,63 @@ import {
   FlaskConical,
   Snowflake,
 } from "lucide-react";
+import perlit1 from "@/assets/perlit1.jpg";
+import perlit2 from "@/assets/perlit2.jpg";
+import perlit3 from "@/assets/perlit3.png";
+import perlit4 from "@/assets/perlit4.jpg";
+import zavod from "@/assets/zavod.jpg";
+import perlit6 from "@/assets/perlit6.jpg";
+import perlit7 from "@/assets/perlit7.png";
+import perlit8 from "@/assets/perlit8.png";
 
 const applications = [
   {
     key: "construction",
     icon: Building2,
     color: "bg-slate/20 text-slate-dark",
-    image: "/src/assets/perlit1.jpg",
+    image: perlit1 ,
   },
   {
     key: "insulation",
     icon: Thermometer,
     color: "bg-secondary/20 text-warm-dark",
-    image: "/src/assets/perlit2.jpg",
+    image: perlit2 ,
   },
   {
     key: "fireproof",
     icon: Flame,
     color: "bg-destructive/20 text-destructive",
-    image: "/src/assets/perlit3.png",
+    image: perlit3 ,
   },
   {
     key: "agriculture",
     icon: Wheat,
     color: "bg-green-100 text-green-700",
-    image: "/src/assets/perlit4.jpg",
+    image: perlit4 ,
   },
   {
     key: "filtration",
     icon: Droplets,
     color: "bg-blue-100 text-blue-700",
-    image: "/src/assets/zavod.jpg",
+    image:zavod,
   },
   {
     key: "metallurgy",
     icon: Factory,
     color: "bg-orange-100 text-orange-700",
-    image: "/src/assets/perlit6.jpg",
+    image: perlit6,
   },
   {
     key: "cryogenic",
     icon: Snowflake,
     color: "bg-cyan-100 text-cyan-700",
-    image: "/src/assets/perlit7.png",
+    image: perlit7 ,
   },
   {
     key: "chemical",
     icon: FlaskConical,
     color: "bg-purple-100 text-purple-700",
-    image: "/src/assets/perlit8.png",
+    image: perlit8 ,
   },
 ];
 
