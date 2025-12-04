@@ -5,29 +5,32 @@ import { Button } from '@/components/ui/button';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Contact } from '@/components/Contact';
-
+import Filter from "@/assets/filter.jpg"
+import Small from "@/assets/small.jpg"
+import Medium from "@/assets/middle.jpg"
+import Large from "@/assets/yirik.webp"
 const productData: Record<string, {
   image: string;
   grades: string[];
   specs: { fraction: string; density: string; temp: string };
 }> = {
   'filter-perlite': {
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/filter.jpg',
+    image: Filter,
     grades: ['А', 'Б', 'В'],
     specs: { fraction: '0.01-0.1 mm', density: '50-150 kg/m³', temp: '-200°C ... +900°C' },
   },
   'small-perlite': {
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/small.jpg',
+    image: Small ,
     grades: ['M75', 'M100', 'M150', 'M200'],
     specs: { fraction: '0.16-1.25 mm', density: '75-200 kg/m³', temp: '-200°C ... +900°C' },
   },
   'medium-perlite': {
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/middle.jpg',
+    image:Medium,
     grades: ['M75', 'M100', 'M150'],
     specs: { fraction: '1.25-2.5 mm', density: '75-150 kg/m³', temp: '-200°C ... +900°C' },
   },
   'large-perlite': {
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/big.webp',
+    image: Large ,
     grades: ['M75', 'M100', 'M150'],
     specs: { fraction: '2.5-5.0 mm', density: '75-150 kg/m³', temp: '-200°C ... +900°C' },
   },

@@ -247,7 +247,13 @@ description: "Agar mahsulotlarni olib ketish uchun yuk mashinangiz bo‘lmasa, b
   footer: {
     rights: "Barcha huquqlar himoyalangan",
     company: "Perlite Group",
-    description: "Perlit ishlab chiqarish va yetkazib berish"
+    description: "Perlit ishlab chiqarish va yetkazib berish",
+    perlit1: "Filtr perlit",
+    perlit2 : "Mayda perlit",
+    perlit3 : "O'rta perlit",
+    perlit4 : "Yirik perlit",
+    
+
   },
   notFound: "Sahifa topilmadi",
   backToHome: "Bosh sahifaga qaytish"
@@ -499,7 +505,11 @@ description: "Если у вас нет грузовика для вывоза �
   footer: {
     rights: "Все права защищены",
     company: "Perlite Group",
-    description: "Производство и поставка перлита"
+    description: "Производство и поставка перлита",
+    perlit1: "Фильтрационный перлит",
+    perlit2: "Мелкий перлит",
+   perlit3: "Средний перлит",
+   perlit4: "Крупный перлит"
   },
   notFound: "Страница не найдена",
   backToHome: "Вернуться на главную"
@@ -751,7 +761,11 @@ description: "If you don't have a truck to transport the products, we will provi
   footer: {
     rights: "All rights reserved",
     company: "Perlite Group",
-    description: "Production and delivery of perlite"
+    description: "Production and delivery of perlite",
+    perlit1: "Filtration perlite",
+    perlit2: "Fine perlite",
+    perlit3: "Medium perlite",
+    perlit4: "Coarse perlite"
   },
   notFound: "Page not found",
   backToHome: "Back to Home"

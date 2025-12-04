@@ -6,11 +6,14 @@ import { Footer } from '@/components/Footer';
 import { Contact } from '@/components/Contact';
 
 import Zavod from "@/assets/zavoddd.jpg";
-import Zavod2 from "@/assets/zavod2.jpg";
+import Zavod2 from "@/assets/f.jpg";
 import Zavod3 from "@/assets/zavod3.jpg";
 import Zavod4 from "@/assets/zavod4.jpg";
 import Zavod5 from "@/assets/zavod5.jpg";
 import Zavod6 from "@/assets/about (2).png";
+import Zavod7 from "@/assets/887888.jpg";
+import Zavod8 from "@/assets/kran44.jpg";
+import Zavod9 from "@/assets/kran55.jpg";
 
 const productionSteps = [
   { key: 'mining', number: '01' },
@@ -19,9 +22,10 @@ const productionSteps = [
   { key: 'expansion', number: '04' },
   { key: 'classification', number: '05' },
   { key: 'packaging', number: '06' },
+  { key: 'packaging4', number: '07' },
 ];
 
-const factoryImages = [Zavod, Zavod2, Zavod3, Zavod4, Zavod5, Zavod6];
+const factoryImages = [Zavod, Zavod2, Zavod3, Zavod4, Zavod5, Zavod6 ,Zavod7,Zavod8,Zavod9];
 
 const Production = () => {
   const { t } = useTranslation();

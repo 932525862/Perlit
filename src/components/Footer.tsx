@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Instagram, Send } from 'lucide-react'; // 🔥 ikonlar qo‘shildi
+import { Instagram, Link, Send } from 'lucide-react'; // 🔥 ikonlar qo‘shildi
 import logo from '@/assets/logo.png';
 
 export const Footer = () => {
@@ -86,13 +86,14 @@ export const Footer = () => {
           {/* Products */}
           <div>
             <h4 className="font-display font-semibold mb-4">
-              {t('products.title')}
+              {t('perliteTypes.title')}
             </h4>
 
             <ul className="space-y-2">
-              <li className="text-primary-foreground/70 text-sm">{t('products.perlite.name')}</li>
-              <li className="text-primary-foreground/70 text-sm">{t('products.vermiculite.name')}</li>
-              <li className="text-primary-foreground/70 text-sm">{t('products.perlite.types.filter')}</li>
+              <li className="text-primary-foreground/70 text-sm">{t('footer.perlit1')}</li>
+              <li className="text-primary-foreground/70 text-sm">{t('footer.perlit2')}</li>
+              <li className="text-primary-foreground/70 text-sm">{t('footer.perlit3')}</li>
+              <li className="text-primary-foreground/70 text-sm">{t('footer.perlit4')}</li>
             </ul>
           </div>
 

@@ -2,29 +2,33 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import Filter from "@/assets/filter.jpg"
+import Small from "@/assets/small.jpg"
+import Medium from "@/assets/middle.jpg"
+import Large from "@/assets/yirik.webp"
 
 const perliteTypes = [
   {
     key: 'filter',
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/filter.jpg',
+    image: Filter,
     grades: ['А', 'Б', 'В'],
     path: '/products/filter-perlite',
   },
   {
     key: 'small',
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/small.jpg',
+    image: Small,
     grades: ['M75', 'M100', 'M150', 'M200'],
     path: '/products/small-perlite',
   },
   {
     key: 'medium',
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/middle.jpg',
+    image: Medium,
     grades: ['M75', 'M100', 'M150'],
     path: '/products/medium-perlite',
   },
   {
     key: 'large',
-    image: 'https://tashkent.perlite.group/wp-content/uploads/2022/12/big.webp',
+    image: Large,
     grades: ['M75', 'M100', 'M150'],
     path: '/products/large-perlite',
   },
