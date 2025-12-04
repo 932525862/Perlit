@@ -246,7 +246,7 @@ description: "Agar mahsulotlarni olib ketish uchun yuk mashinangiz bo‘lmasa, b
   },
   footer: {
     rights: "Barcha huquqlar himoyalangan",
-    company: "Perlite Group",
+    company: "Perlite.uz",
     description: "Perlit ishlab chiqarish va yetkazib berish",
     perlit1: "Filtr perlit",
     perlit2 : "Mayda perlit",
@@ -504,7 +504,7 @@ description: "Если у вас нет грузовика для вывоза �
   },
   footer: {
     rights: "Все права защищены",
-    company: "Perlite Group",
+    company: "Perlite.uz",
     description: "Производство и поставка перлита",
     perlit1: "Фильтрационный перлит",
     perlit2: "Мелкий перлит",
@@ -760,7 +760,7 @@ description: "If you don't have a truck to transport the products, we will provi
   },
   footer: {
     rights: "All rights reserved",
-    company: "Perlite Group",
+    company: "Perlite.uz",
     description: "Production and delivery of perlite",
     perlit1: "Filtration perlite",
     perlit2: "Fine perlite",
