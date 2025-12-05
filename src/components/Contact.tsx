@@ -45,6 +45,12 @@ export const Contact = () => {
       value: '+998 (97) 561-16-46',
       href: 'tel:+998975611646',
     },
+     {
+      icon: Phone,
+      label: t('contact.phone'),
+      value: '+998 (93) 572-72-96',
+      href: 'tel:+998935727296',
+    },
     {
       icon: Mail,
       label: t('contact.email'),
@@ -83,7 +89,7 @@ export const Contact = () => {
                 <a
                   key={index}
                   href={item.href}
-                  className="flex items-start gap-4 p-4 rounded-xl hover:bg-accent/50 transition-colors group"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-accent/50 transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center flex-shrink-0 group-hover:bg-secondary/30 transition-colors">
                     <item.icon className="h-6 w-6 text-secondary" />
@@ -97,7 +103,7 @@ export const Contact = () => {
             </div>
 
             {/* Working Hours */}
-            <div className="bg-accent/50 rounded-2xl p-6">
+            {/* <div className="bg-accent/50 rounded-2xl p-6">
               <h3 className="font-display font-semibold text-foreground mb-3">
                 {t('contact.phone')}
               </h3>
@@ -105,7 +111,7 @@ export const Contact = () => {
                 Mon - Fri: 09:00 - 18:00<br />
                 Sat: 10:00 - 15:00
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

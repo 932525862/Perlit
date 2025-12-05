@@ -12,7 +12,7 @@ import {
 import whyus1 from '@/assets/whyUs/whyus1.jpg';
 import whyus2 from '@/assets/whyUs/whyus2.jpg';
 import whyus3 from '@/assets/whyUs/whyus3.png';
-import whyus4 from '@/assets/whyUs/whyus4.jpg';
+import whyus4 from '@/assets/kovlabolish .png';
 import whyus5 from '@/assets/whyUs/whyus5.png';
 import whyus6 from '@/assets/whyUs/whyus6.jpg';
 import whyus7 from '@/assets/whyUs/whyus7.jpg';

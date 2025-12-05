@@ -198,10 +198,10 @@ const uz = {
         title: "Moslashuvchanlik",
         description: "Kerakli zichlik, fraksiya va elaklarni ishlab chiqaramiz"
       },
-      dealers: {
-        title: "7 ta diler",
-        description: "RF va MDH mamlakatlarida chakana buyurtmalar uchun"
-      },
+    dealers: {
+  title: "Sifatli qazib olish",
+  description: "Mahsulotni o‘zimiz mustaqil ravishda qazib olamiz va uning yuqori sifatini ta’minlaymiz."
+},
       testing: {
         title: "Sinov",
         description: "Mahsulot namunalarini bepul beramiz"
@@ -456,10 +456,10 @@ const ru = {
         title: "Гибкость",
         description: "Делаем продукцию нужной плотности, фракции и рассева"
       },
-      dealers: {
-        title: "7 дилеров",
-        description: "В РФ и странах СНГ для розничных заказов"
-      },
+     dealers: {
+  title: "Качественная добыча",
+  description: "Мы самостоятельно добываем продукцию и обеспечиваем её высокое качество."
+},
       testing: {
         title: "Тестирование",
         description: "Бесплатно даём образцы продукции на пробу"
@@ -712,10 +712,11 @@ const en = {
         title: "Flexibility",
         description: "We make products of required density, fraction and screening"
       },
-      dealers: {
-        title: "7 Dealers",
-        description: "In CIS countries for retail orders"
-      },
+     dealers: {
+  title: "High-Quality Extraction",
+  description: "We extract the product ourselves and ensure its superior quality."
+},
+
       testing: {
         title: "Testing",
         description: "Free product samples for trial"
